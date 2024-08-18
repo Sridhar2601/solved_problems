@@ -3,7 +3,7 @@ import java.util.*;
 // Remove this prefix and suffix. Then what you have is the minimal remaining string
 //input:abcfhgtrcba
 //output:fhgtr
-class remove_prefix_suffix
+class sridhar
 {
     public static void main(String[] args)
     {
