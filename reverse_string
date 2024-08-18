@@ -1,7 +1,7 @@
 import java.util.*;
 //input:a man in 123
 //output:3 21n in ama
-class reverse_string
+class sridhar
 {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
