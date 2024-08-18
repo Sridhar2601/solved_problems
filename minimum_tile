@@ -4,7 +4,7 @@ import java.util.*;
 //output:min tile=5
        tiles used=[10,10,5,1,1]
 
-class minimum_tile
+class sridhar
 {
     public static void main(String[] args) {
         Scanner obj=new Scanner(System.in);
