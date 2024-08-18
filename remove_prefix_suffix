@@ -1,0 +1,20 @@
+import java.util.*;
+//Take the given string and find the maximal prefix then it should be reversed as a suffix.
+// Remove this prefix and suffix. Then what you have is the minimal remaining string
+//input:abcfhgtrcba
+//output:fhgtr
+class remove_prefix_suffix
+{
+    public static void main(String[] args)
+    {
+        Scanner obj=new Scanner(System.in);
+        String str= obj.nextLine();
+        int i=0,j=str.length() - 1;
+        while(i<j && str.charAt(i) == str.charAt(j))
+        {
+            i++;
+            j--;
+        }
+        System.out.println(str.substring(i,j+1));
+    }
+}
