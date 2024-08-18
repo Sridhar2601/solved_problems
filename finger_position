@@ -1,0 +1,37 @@
+import java.util.*;
+//input:45
+//output:thumb
+//input:25
+//output:little
+class sridhar
+{
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int f=n % 8;
+        switch(f)
+        {
+            case 0:
+            case 2:
+                System.out.println("ring");
+                break;
+            case 1:
+                System.out.println("little");
+                break;
+            case 3:
+            case 7:
+                System.out.println("middle");
+                break;
+            case 4:
+            case 6:
+                System.out.println("index");
+                break;
+            case 5:
+                System.out.println("thumb");
+                break;
+            default:
+                System.out.println("invalid");
+                break;
+        }
+    }
+}
