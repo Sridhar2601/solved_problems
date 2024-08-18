@@ -1,8 +1,10 @@
 import java.util.*;
 //input:426 486 654
 //output:6 4
-class common_ele_digit {
-    public static void main(String[] args) {
+class sridhar 
+{
+    public static void main(String[] args) 
+    {
         Scanner sc=new Scanner(System.in);
         int n1=sc.nextInt();
         int n2=sc.nextInt();
