@@ -1,0 +1,43 @@
+import java.util.*;
+//input: 
+//-->String:A man in 2004
+//->n=1        
+//output:B nbo jo 3115
+class cipher
+{
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        String str=sc.nextLine();
+        int n=sc.nextInt();
+        String cip="";
+        char str1[]=new char[str.length()];
+        for(int i=0;i<str.length();i++)
+        {
+            str1[i]=str.charAt(i);
+            char t=str1[i];
+            if(Character.isUpperCase(str1[i]))
+            {
+                t -= 'A';
+                t +=n;
+                t %=26;
+                t +='A';
+            }
+            else if(Character.isLowerCase(str1[i]))
+            {
+                t -= 'a';
+                t +=n;
+                t %=26;
+                t +='a';
+            }
+            else if(Character.isDigit(str1[i]))
+            {
+                t -= '0';
+                t +=n;
+                t %=10;
+                t +='0';
+            }
+            cip+=t;
+        }
+        System.out.println(cip);
+    }
+}
