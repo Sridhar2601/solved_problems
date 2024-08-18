@@ -1,0 +1,75 @@
+import java.util.*;
+//input:426 486 654
+//output:6 4
+class common_ele_digit {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int n1=sc.nextInt();
+        int n2=sc.nextInt();
+        int n3=sc.nextInt();
+        int c1=0;
+        int c2=0;
+        int c3=0;
+        int t1=n1;
+        int t2=n2;
+        int t3=n3;
+        while(t1!=0)
+        {
+            int d=t1%10;
+            c1++;
+            t1/=10;
+        }
+        //System.out.println(c1);
+        while(t2!=0)
+        {
+            int d=t2%10;
+            c2++;
+            t2/=10;
+        }
+        //System.out.println(c2);
+        while(t3!=0)
+        {
+            int d=t3%10;
+            c3++;
+            t3/=10;
+        }
+        //System.out.println(c3);
+        int arr1[]=new int[c1];
+        int arr2[]=new int[c2];
+        int arr3[]=new int[c3];
+        for(int i=0;i<c1;i++)
+        {
+            int d=n1%10;
+            arr1[i]=d;
+            n1/=10;
+        }
+        for(int i=0;i<c2;i++)
+        {
+            int d=n2%10;
+            arr2[i]=d;
+            n2/=10;
+        }
+        for(int i=0;i<c3;i++)
+        {
+            int d=n3%10;
+            arr3[i]=d;
+            n3/=10;
+        }
+        int k1=0;
+        for(int i=0;i<c1;i++) {
+            for(int j=0;j<c2;j++) {
+                for (int k = 0; k < c3; k++) {
+                    if (arr1[i] == arr2[j] && arr2[j] == arr3[k]) {
+                        System.out.print(arr1[i]+" ");
+                        k1=1;
+                        break;
+                    }
+                }
+            }
+        }
+        if(k1==0)
+        {
+            System.out.println("No common element found");
+        }
+    }
+}
