@@ -3,7 +3,7 @@ import java.util.*;
 //-->String:A man in 2004
 //->n=1        
 //output:B nbo jo 3115
-class cipher
+class sridhar
 {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
